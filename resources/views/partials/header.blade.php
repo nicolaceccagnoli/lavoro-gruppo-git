@@ -10,6 +10,11 @@
             'label' => 'Chi siamo',
             'active' => true,
         ],
+        [
+            'url' => '/books',
+            'label' => 'Libri',
+            'active' => true,
+        ],
     ];
 @endphp
 
