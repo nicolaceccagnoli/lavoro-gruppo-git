@@ -5,13 +5,18 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-//Models
+// Models
+
 use App\Models\Movie;
 
 class MovieSeeder extends Seeder
 {
+    /**
+     * Run the database seeds.
+     */
     public function run(): void
     {
+        //
         Movie::truncate();
 
         for ($i = 0; $i < 10; $i++) {
@@ -28,5 +33,6 @@ class MovieSeeder extends Seeder
             // Lo salvo in persistenza
             $movie->save();
         }
+
     }
 }

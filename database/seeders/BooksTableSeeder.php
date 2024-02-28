@@ -25,9 +25,9 @@ class BooksTableSeeder extends Seeder
             $Book->author = fake()->word();
             $Book->year = fake()->date('Y-m-d');
             $Book->genre = fake()->word();
-            $Book->page= fake()->randomNumber(3, false);
+            $Book->pages= fake()->randomNumber(3, false);
             $Book->description=fake()->paragraph();
-            $Book->is_avaible=fake()->boolean();
+            $Book->is_available=fake()->boolean();
 
             // Lo salvo in persistenza
             $Book->save();

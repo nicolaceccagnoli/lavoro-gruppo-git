@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('title', 64);
             $table->string('original_title', 64);
             $table->year('date');
-            $table->language('string', 64);
-            $table->duration('time');
+            $table->string('language', 64);
+            $table->time('duration');
             $table->timestamps();
         });
     }
