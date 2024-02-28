@@ -22,12 +22,12 @@ class BooksTableSeeder extends Seeder
             $Book = new Book();
             // Ne riempio le colonne
             $Book->title = fake()->word();
-            $Book->author = "Stazione di ".fake()->word();
-            $Book->year = "Stazione di ".fake()->word();
-            $Book->genre = fake()->time();
-            $Book->page= fake()->time();
-            $Book->description=fake()->randomNumber(4, false);
-            $Book->is_avaible=fake()->numberBetween(6, 25);
+            $Book->author = fake()->word();
+            $Book->year = fake()->date('Y-m-d');
+            $Book->genre = fake()->word();
+            $Book->page= fake()->randomNumber(3, false);
+            $Book->description=fake()->paragraph();
+            $Book->is_avaible=fake()->boolean();
 
             // Lo salvo in persistenza
             $Book->save();
