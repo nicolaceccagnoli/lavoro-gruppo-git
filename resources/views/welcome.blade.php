@@ -3,11 +3,11 @@
 @section('page-title', 'Home')
 
 @section('main-content')
-    <h1>
+    <h1 class="text-center">
         Laravel Git
     </h1>
 
-    <h2>
+    <h2 class="text-center">
         {{ $title }}
     </h2>
 @endsection
