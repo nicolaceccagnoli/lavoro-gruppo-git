@@ -4,7 +4,7 @@
 
 @section('main-content')
     <h1 class="text-center">
-        Laravel Git
+        Laravel Git Modifica
     </h1>
 
     <h2 class="text-center">
